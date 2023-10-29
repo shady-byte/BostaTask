@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BostaTask</string>
+    <string name="user_profile_title">Profile</string>
+    <string name="album_photos_title">Album Photos</string>
+    <string name="albums">Albums</string>
+    <string name="data_error">Something went wrong, try again later.</string>
+    <string name="search_in_images">Search in images</string>
+    <string name="image_description">photos of specific album</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav_graph"
+    app:startDestination="@id/userAlbumsFragment">
+
+    <fragment
+        android:id="@+id/userAlbumsFragment"
+        android:name="com.example.bostatask.ui.view.UserProfileFragment"
+        android:label="@string/user_profile_title"
+        tools:layout="@layout/fragment_user_profile" >
+        <action
+            android:id="@+id/action_userAlbumsFragment_to_albumPhotosFragment"
+            app:destination="@id/albumPhotosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/albumPhotosFragment"
+        android:name="com.example.bostatask.ui.view.AlbumPhotosFragment"
+        android:label="@string/album_photos_title"
+        tools:layout="@layout/fragment_album_photos">
+        <argument
+            android:name="albumId"
+            app:argType="integer"
+            android:defaultValue="1"/>
+        <argument
+            android:name="albumTitle"
+            app:argType="string" />
+    </fragment>
+</navigation>
